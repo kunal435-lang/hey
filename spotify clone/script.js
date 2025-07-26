@@ -24,11 +24,6 @@ async function getsong() {
 
 async function main() {
   let songs = await getsong();
-  if (songs.length === 0) {
-    console.error("No songs found.");
-    return;
-  }
-
   let songUl = document.querySelector('.songlist ul');
   let currentAudio = null;
 
