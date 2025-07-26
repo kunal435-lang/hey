@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="utility.css">
 </head>
-
+`
 <body> <img class="invert" src="asll.svg" alt="">
     <div class="container flex">
 
@@ -142,24 +142,21 @@
             </div>
 
             <div class="playbar">
-                <div class="seekbar">
-                    <div class="circle">
 
-                    </div>
-                </div>
-                <div class="song info"></div> playbar
+  
+  <div class="songinfo">
+  </div>
+  <div class="songbutton invert">
+    <div class="prevbt"><img src="privious.svg" alt="Previous"></div>
+    <div class="playbt"><img src="play.svg" alt="Play/Pause"></div>
+    <div class="nextbt"><img src="nextsong.svg" alt="Next"></div>
+  </div><div class="seekbar" >  <input type="range" id="seekbar" value="0" min="0" step="1">
+  </div>
 
-                <div class="songbutton invert">
-                   <div class="pribt"><img src="privious.svg" alt=""></div> 
-                    <div class="playbt"><img src="play.svg" alt=""></div>
-                    <div class="nextbt"><img src="nextsong.svg" alt=""></div>
-                </div>
-                <div class="time">
+  <div class="time">
+    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+</div>
 
-                </div>
-
-
-            </div>
 
         </div>
     </div>
